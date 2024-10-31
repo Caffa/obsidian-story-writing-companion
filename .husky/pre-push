@@ -1,6 +1,3 @@
-#!/usr.bin/env sh
-. "$(dirname "$0")/_/husky.sh"
-
 bun tsc -noEmit -skipLibCheck || {
   echo "Error: typecheck failed, do not push"
   exit 1
